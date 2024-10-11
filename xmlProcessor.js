@@ -174,7 +174,7 @@ for (let traslado of traslados) {
             baseiva0 += base;
         }
     } else if (tipoImpuesto === '003') { // IEPS
-        baseieps += importe;
+        baseieps += base;
     }
 }
 
