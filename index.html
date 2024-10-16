@@ -16,11 +16,26 @@
             <h2>Selecciona tus archivos XML</h2>
             <input type="file" id="file-input" multiple accept=".xml">
             <button id="process-btn">Procesar Archivos</button>
-			<button id="export-btn" disabled>Exportar a Excel</button> 
+	    <button id="export-btn" disabled>Exportar a Excel</button> 
 		</section>
-        </section>
 
-        <section id="resultados">
+	     <section>
+		<label for="filtro-tipo">Filtrar por Tipo:</label>
+		<select id="filtro-tipo">
+		    <option value="">Mostrar Todos</option>
+		    <option value="Factura">Factura</option>
+		    <option value="Nota de crédito">Nota de crédito</option>
+		    <option value="Traslado">Traslado</option>
+		    <option value="Nómina">Nómina</option>
+		    <option value="Pago">Pago</option>
+		</select>
+   
+	     </section>
+	    
+	    
+
+
+        <section> id="resultados">
             <h2>Resultados</h2>
             <div id="output"></div>
         </section>
