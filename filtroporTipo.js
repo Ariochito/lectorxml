@@ -1,4 +1,4 @@
-Export function filtrarPorTipo() {
+export function filtrarPorTipo() {
     const filtroTipo = document.getElementById("filtro-tipo").value.toLowerCase();
     const table = document.querySelector("table");
     const tbody = table.querySelector("tbody");
