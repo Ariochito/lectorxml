@@ -1,4 +1,4 @@
-// Función para aplicar filtros en cada columna
+no// Función para aplicar filtros en cada columna
 export function agregarFiltrosATabla() {
     const table = document.querySelector("table");
     const thead = table.querySelector("thead");
@@ -33,5 +33,4 @@ export function filtrarTabla(input, table) {
     });
 }
 
-// Llama esta función después de generar la tabla para agregar los 
-agregarFiltrosATabla(); // Llamada para agregar los filtros en la tabla
+// Llama esta función después de generar la tabla para agregar los  // Llamada para agregar los filtros en la tabla
