@@ -1,5 +1,5 @@
 // Función para aplicar filtros en cada columna
-function agregarFiltrosATabla() {
+export function agregarFiltrosATabla() {
     const table = document.querySelector("table");
     const thead = table.querySelector("thead");
     const trHead = thead.querySelector("tr");
