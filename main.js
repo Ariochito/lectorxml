@@ -24,6 +24,11 @@ document.getElementById("process-btn").addEventListener("click", async () => {
     exportBtn.disabled = resultadosGlobal.length === 0;
 });
 
+
+// Agregar evento al filtro de tipo
+document.getElementById("filtro-tipo").addEventListener("change", filtrarPorTipo);
+
+
  // Evento para el botón de exportar
  document.getElementById("export-btn").addEventListener("click", () => {
     if (resultadosGlobal.length === 0) {
