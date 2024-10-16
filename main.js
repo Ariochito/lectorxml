@@ -3,6 +3,7 @@
 import { procesarArchivos } from './xmlProcessor.js';
 import { mostrarResultados } from './resultados.js';
 import { exportarAExcel } from './exporter.js';
+import { agregarFiltrosATabla } from 'filtro.js';
 
 let resultadosGlobal = [];
 
@@ -17,6 +18,7 @@ document.getElementById("process-btn").addEventListener("click", async () => {
 
     resultadosGlobal = await procesarArchivos(files);
     mostrarResultados(resultadosGlobal);
+    agregarFiltrosATabla();
 
     const exportBtn = document.getElementById("export-btn");
     exportBtn.disabled = resultadosGlobal.length === 0;
