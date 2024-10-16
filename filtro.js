@@ -33,6 +33,5 @@ export function filtrarTabla(input, table) {
     });
 }
 
-// Llama esta función después de generar la tabla para agregar los filtros
-mostrarResultados(resultados);
+// Llama esta función después de generar la tabla para agregar los 
 agregarFiltrosATabla(); // Llamada para agregar los filtros en la tabla
