@@ -22,7 +22,7 @@ export function agregarFiltrosATabla() {
 }
 
 // Función para filtrar la tabla basada en el contenido de los filtros
-function filtrarTabla(input, table) {
+export function filtrarTabla(input, table) {
     const columnIndex = input.parentElement.cellIndex;
     const filterValue = input.value.toLowerCase();
     const tbody = table.querySelector("tbody");
