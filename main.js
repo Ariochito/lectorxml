@@ -4,7 +4,7 @@ import { procesarArchivos } from './xmlProcessor.js';
 import { mostrarResultados } from './resultados.js';
 import { exportarAExcel } from './exporter.js';
 import { agregarFiltrosATabla } from './filtro.js';
-import { filtrarPorTipo } from './filtroporTipo.js';
+
 
 let resultadosGlobal = [];
 
@@ -24,10 +24,6 @@ document.getElementById("process-btn").addEventListener("click", async () => {
     const exportBtn = document.getElementById("export-btn");
     exportBtn.disabled = resultadosGlobal.length === 0;
 });
-
-
-// Agregar evento al filtro de tipo
-document.getElementById("filtro-tipo").addEventListener("change", filtrarPorTipo());
 
 
  // Evento para el botón de exportar
