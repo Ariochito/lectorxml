@@ -57,28 +57,28 @@ button:hover:not(:disabled) {
 }
 
 #output {
-    margin-top: 20px;
-    overflow-x: auto;
+    max-width: 100%;        /* Ajusta el ancho máximo */
+    max-height: 600px;      /* Ajusta el alto máximo que prefieras */
+    overflow: auto;         /* Habilita el desplazamiento */
+    border: 1px solid #ccc; /* Añade un borde opcional */
 }
 
 table {
-    width: 100%;
+    width: 100%;            /* Asegura que la tabla ocupe todo el ancho disponible */
     border-collapse: collapse;
 }
 
+thead {
+    position: sticky;       /* Mantén el encabezado visible cuando desplazas */
+    top: 0;
+    background-color: #f0f0f0; /* Color de fondo del encabezado */
+    z-index: 1;
+}
+
 th, td {
-    padding: 12px 15px;
+    padding: 8px;
+    text-align: left;
     border: 1px solid #ddd;
-    text-align: center;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-td {
-    background-color: #f9f9f9;
 }
 
 footer {
