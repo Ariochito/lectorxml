@@ -1,6 +1,6 @@
 //exporter.js
 
-  // Exportar resultados a Excel con formato numérico correcto
+ // Exportar resultados a Excel con formato numérico correcto
 export function exportarAExcel() {
     // Obtener la tabla
     const table = document.querySelector("table");
@@ -14,7 +14,7 @@ export function exportarAExcel() {
         const cells = row.querySelectorAll("td");
         let rowData = {};
         headers.forEach((header, index) => {
-            rowData[header] = cells[index].textContent;
+            rowData[header] = cells[index] ? cells[index].textContent : ''; // Manejar caso donde la celda sea undefined
         });
         return rowData;
     });
@@ -45,7 +45,7 @@ export function exportarAExcel() {
     for (let fila = rango.s.r + 1; fila <= rango.e.r; fila++) { // Saltar la fila de encabezado
         columnasNumericas.forEach(columna => {
             const celda = worksheet[XLSX.utils.encode_cell({ r: fila, c: columnasOrdenadas.indexOf(columna) })];
-            if (celda) {
+            if (celda && typeof celda.v === 'string') {
                 // Eliminar cualquier símbolo de moneda y convertir a número
                 const valor = parseFloat(celda.v.replace(/[^\d.-]/g, ''));  
                 if (!isNaN(valor)) {
