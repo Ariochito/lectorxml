@@ -4,6 +4,7 @@ import { procesarArchivos } from './xmlProcessor.js';
 import { mostrarResultados } from './resultados.js';
 import { exportarAExcel } from './exporter.js';
 import { agregarFiltrosATabla } from './filtro.js';
+import { filtrarPorTipo} from '.filtroportipo.js';
 
 let resultadosGlobal = [];
 
