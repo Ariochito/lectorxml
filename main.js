@@ -27,7 +27,7 @@ document.getElementById("process-btn").addEventListener("click", async () => {
 
 
 // Agregar evento al filtro de tipo
-document.getElementById("filtro-tipo").addEventListener("change", filtrarPorTipo);
+document.getElementById("filtro-tipo").addEventListener("change", filtrarPorTipo());
 
 
  // Evento para el botón de exportar
