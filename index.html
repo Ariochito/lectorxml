@@ -21,14 +21,15 @@
 
 	     <section>
 		<label for="filtro-tipo">Filtrar por Tipo:</label>
-		<select id="filtro-tipo">
-		    <option value="">Mostrar Todos</option>
-		    <option value="Factura">Factura</option>
-		    <option value="Nota de crédito">Nota de crédito</option>
-		    <option value="Traslado">Traslado</option>
-		    <option value="Nómina">Nómina</option>
-		    <option value="Pago">Pago</option>
+		<select id="filtro-tipo" onchange="filtrarPorTipo()">
+		    <option value="">Todos</option>
+		    <option value="factura">Factura</option>
+		    <option value="nota de crédito">Nota de crédito</option>
+		    <option value="traslado">Traslado</option>
+		    <option value="nómina">Nómina</option>
+		    <option value="pago">Pago</option>
 		</select>
+
    
 	     </section>
 	    
