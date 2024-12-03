@@ -265,6 +265,9 @@ function procesarArchivoXML(xmlText) {
     if (!comprobante) return null;
 
     const version = getAttributeValue(comprobante, ["Version", "version"]) || '';
+    const serie = getAttributeValue(comprobante, ["Serie", "serie"]) || '';
+    const folio = getAttributeValue(comprobante, ["Folio", "folio"]) || '';
+    
     const tipoComprobante = TIPOS_DE_COMPROBANTE[getAttributeValue(comprobante, ["TipoDeComprobante", "tipoDeComprobante"])] || 'Desconocido';
     const fecha = formatearFecha(getAttributeValue(comprobante, ["Fecha", "fecha"]) || '');
 
@@ -323,6 +326,8 @@ function procesarArchivoXML(xmlText) {
 
     return {
         "Versión": version,
+        "Serie": serie,
+        "Folio": folio,
         "Tipo": tipoComprobante,
         "Fecha Emisión": fecha,
         "RFC Emisor": rfcEmisor,
