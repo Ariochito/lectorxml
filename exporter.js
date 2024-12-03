@@ -21,7 +21,7 @@ export function exportarAExcel() {
 
     // Definir las columnas en orden
     const columnasOrdenadas = [
-        "Versión", "Tipo", "Fecha Emisión", "RFC Emisor", "Nombre Emisor", 
+        "Versión", "Serie", "Folio", "Tipo", "Fecha Emisión", "RFC Emisor", "Nombre Emisor", 
         "RFC Receptor", "Nombre Receptor", "Uso CFDI", "CP Receptor", 
         "RegimenFiscal Receptor", "SubTotal", "Descuento", "iva16", "iva8", 
         "iva0", "ieps", "retencionISR", "retencionIVA", "Total", 
