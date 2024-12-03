@@ -6,7 +6,7 @@ export function mostrarResultados(resultados) {
 
     const table = document.createElement("table");
     const headers = [
-        "Versión", "Tipo", "Fecha Emisión", "RFC Emisor", "Nombre Emisor", "RFC Receptor",  "Nombre Receptor","Uso CFDI", "CP Receptor", "RegimenFiscal Receptor", "SubTotal", "Descuento", 
+        "Versión", "Serie", "Folio",  "Tipo", "Fecha Emisión", "RFC Emisor", "Nombre Emisor", "RFC Receptor",  "Nombre Receptor","Uso CFDI", "CP Receptor", "RegimenFiscal Receptor", "SubTotal", "Descuento", 
         "iva16", "iva8", "iva0", "ieps", "retencionISR", "retencionIVA",
         "Total", "totalImpuestosTrasladados", "Moneda", "Forma de Pago", "Método de Pago", "Lugar Expedición", "UUID", "Descripción Conceptos","baseiva16", "baseiva8", "baseiva0", "baseieps"
         
